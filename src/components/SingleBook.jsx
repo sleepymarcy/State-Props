@@ -1,6 +1,7 @@
 import { Container, Col, Card, Button } from "react-bootstrap";
 import { Component } from "react"
 import Selected from "./Selected"
+import books from '../data/fantasy.json'
 
 class SingleBook extends Component {
 
@@ -14,10 +15,10 @@ class SingleBook extends Component {
                 <Container>
                     <Col mb-3>
                         <Card h-100>
-                            <Card.Img variant="top" src={props.img} />
+                            <Card.Img variant="top" src={books.img} />
                             <Card.Body>
-                                <Card.Title className="line-clamp">{props.title}</Card.Title>
-                                <Button mt-auto variant="secondary">${props.price}</Button>
+                                <Card.Title className="line-clamp">{books.title}</Card.Title>
+                                <Button mt-auto variant="secondary">${books.price}</Button>
                                 <Selected book={this.state.selected} />
                             </Card.Body>
                         </Card>

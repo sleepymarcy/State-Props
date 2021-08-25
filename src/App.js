@@ -1,10 +1,10 @@
 import './App.css';
 import  'bootstrap/dist/css/bootstrap.min.css'
 
-import WarningSign from './Components/WarningSign';
-import MyBadge from './Components/MyBadge'
-import BookList from './Components/BookList'
-import books from './Data/fantasy.json'
+import WarningSign from './components/WarningSign';
+import MyBadge from './components/MyBadge'
+import BookList from './components/BookList'
+import books from './data/fantasy.json'
 import SingleBook from './components/SingleBook'
 import Selected from './components/Selected'
 
