@@ -1,19 +1,26 @@
-import './App.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import './App.css';
+import  'bootstrap/dist/css/bootstrap.min.css'
 
+import WarningSign from './Components/WarningSign';
+import MyBadge from './Components/MyBadge'
+import BookList from './Components/BookList'
+import books from './Data/fantasy.json'
 import SingleBook from './components/SingleBook'
 import Selected from './components/Selected'
 
-const App = () => {
+function App() {
   return (
-    <div>
+    <div className="App">
+      <WarningSign message="This is my message!"/>
+      <MyBadge text="My text goes here" color="secondary"/>
+      <BookList array={books}/>
       <SingleBook />
       <Selected />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
 
 // import JSONDATA from './data/fantasy.json'
 // import {useState} from 'react'
